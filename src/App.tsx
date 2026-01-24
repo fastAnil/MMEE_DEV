@@ -31,7 +31,7 @@ export default function App() {
         <section className="center">
           <StorySlider />
           <div className="center">
-            <h2 className="title">Search the event you are looking for</h2>
+            <h2 className="title">Plan your event....</h2>
           </div>  
           <SearchBar />
         </section>
