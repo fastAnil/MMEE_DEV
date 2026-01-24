@@ -1,0 +1,25 @@
+For Deployment of React Vite app on GitHub:
+
+1. Change setting in vite.config.ts
+	
+	// https://vite.dev/config/
+	export default defineConfig({
+	  plugins: [react()],
+	  base: "/" 
+	})
+
+2. Add package.json settings:
+
+	npm i gh-pages --save-dev
+
+	"homepage": "https://makemyeventeasy.com",
+	
+	scripts{
+	 "predeploy": "npm run build",
+	  "deploy": "gh-pages -d dist",
+	}
+
+3. In Github Repository should be public
+4. In User Should have access to that repository
+
+
