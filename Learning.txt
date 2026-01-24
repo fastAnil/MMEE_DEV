@@ -22,4 +22,6 @@ For Deployment of React Vite app on GitHub:
 3. In Github Repository should be public
 4. In User Should have access to that repository
 
+5. Repo-> Settings -> Gh-Pages -> Deployment Should be from gh-Pages Branch
+
 
