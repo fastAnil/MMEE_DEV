@@ -1,0 +1,28 @@
+.side-pane {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 14px;
+  background: #fff;
+
+  /* 🔥 HEIGHT FIX */
+  min-height: 520px;          /* base height */
+  height: calc(100vh - 220px);/* adaptive to screen */
+  overflow-y: auto;
+}
+
+/* Title spacing */
+.side-pane h4 {
+  margin: 0 0 12px;
+  font-size: 15px;
+}
+
+.side-pane h4 {
+  margin: 0 0 12px 0;
+}
+
+@media (max-width: 768px) {
+  .side-pane {
+    min-height: auto;
+  }
+}
+

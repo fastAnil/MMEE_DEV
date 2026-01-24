@@ -1,0 +1,54 @@
+/* OUTER WRAPPER */
+.story-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;     /* 🔑 CENTER ALIGN */
+  width: 100%;
+  margin: 0 auto;
+  gap: 12px;
+}
+
+/* SCROLL AREA */
+.stories {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  max-width: 660px;            /* 🔑 FIXED CENTER WIDTH */
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.stories::-webkit-scrollbar {
+  display: none;
+}
+
+/* VIDEO CARDS */
+.stories video {
+  width: 150px;
+  height: 200px;
+  border-radius: 12px;
+  object-fit: cover;
+  flex-shrink: 0;      
+  border: 1px solid lightgray;        /* 🔑 REQUIRED */
+}
+
+/* ARROWS */
+.arrow {
+  border: none;
+  background: transparent;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .stories {
+    max-width: 300px;
+    border: 1px solid lightgray;
+  }
+
+  .stories video {
+    width: 70px;
+    height: 110px;
+  }
+}

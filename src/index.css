@@ -1,0 +1,17 @@
+:root {
+  --bg: #FDEAFF;
+  --line: #e2cfe3;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  font-family: "Calibri Light", Calibri, Arial, sans-serif;
+  color: darkslategray;
+}
+
+.separator {
+  height: 1px;
+  background: var(--line);
+  margin: 20px 0;
+}

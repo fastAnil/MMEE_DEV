@@ -1,0 +1,178 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  border: solid 1px lightgray;
+}
+
+.logo {
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.page-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr 260px;
+  align-items: stretch;            /* 🔑 TOP ALIGN FIX */
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-top: 40px;
+  height: 500px;
+}
+
+
+/* SIDE PANES */
+.pane {
+  display: flex;
+  flex-direction: column;
+}
+
+/* CENTER CONTENT */
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+/* REMOVE DEFAULT H2 MARGIN */
+.title {
+  margin: 0;
+  text-align: center;
+}
+
+
+/* ===== TABLET ===== */
+@media (max-width: 1024px) {
+  .page-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .center {
+    order: 1;
+  }
+
+  .pane {
+    height: 100vh;
+    min-height: 100vh;
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .page-layout {
+    padding: 12px;
+    gap: 16px;
+  }
+  
+  /* Stack sidebars below main content on mobile */
+  .pane {
+    width: 100%;
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 640px) {
+  .page-layout {
+    padding: 12px;
+  }
+}
+
+/* ===== DESKTOP VIEW ===== */
+.page-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr 260px;
+  gap: 24px;
+  align-items: start;
+  height: 600px;
+}
+
+.mobile-toggle {
+  display: none;
+}
+
+.close{
+  display: none;
+}
+
+/* ===== MOBILE VIEW ===== */
+@media (max-width: 1024px) {
+  .page-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .mobile-toggle {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 16px;
+    
+  }
+
+  .mobile-toggle button {
+    background: white;
+    border-radius: 20px;
+    padding: 6px 14px;
+    border: 1px solid #ccc;
+  }
+
+  /* PANES AS DRAWERS */
+  .pane {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 260px;
+    background: white;
+    z-index: 1000;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    padding: 12px;
+  }
+
+  .pane.right {
+    right: 0;
+    left: auto;
+    transform: translateX(100%);
+  }
+
+  .pane.open {
+    transform: translateX(0);
+  }
+
+  .close {
+    background: none;
+    border: none;
+    font-size: 20px;
+    align-self: flex-end;
+    cursor: pointer;
+  }
+}
+
+
