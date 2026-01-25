@@ -15,7 +15,7 @@ export default function Footer() {
         {/* MIDDLE – DELHI */}
         <div className="footer-location">
           <h4>Delhi</h4>
-          <p>B Block, Dayanand Colony, Lajpat Nagar, New Delhi, India</p>
+          <p>B - 14, Basement, Dayanand Colony, Lajpat Nagar - 4, New Delhi - 110024, India</p>
           <div className="map-box"> <iframe
           title="Delhi Map"
           src="https://www.google.com/maps?q=B%20Block%2C%20Dayanand%20Colony%2C%20Lajpat%20Nagar%2C%20New%20Delhi%2C%20India&output=embed"
