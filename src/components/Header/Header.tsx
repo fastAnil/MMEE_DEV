@@ -24,7 +24,7 @@ export default function Header() {
 
       {/* RIGHT SECTION */}
       <div className="header-right">
-        <button className="host-btn" onClick={() => navigate("/service-provider")}>Switch to Host</button>
+        <button className="host-btn" onClick={() => navigate("/service-provider")}>Switch to Provider</button>
 
         <div className="avatar-wrapper">
           <img
