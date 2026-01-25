@@ -4,10 +4,10 @@ import "./ServiceProvider.css";
 
 const EVENT_TYPES = [
   "Wedding",
-  "Corporate Event",
   "Birthday Party",
   "Music Concert",
   "Sports Event",
+  "Corporate Event",
 ];
 
 const SERVICE_TYPES = [
