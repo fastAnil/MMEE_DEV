@@ -146,5 +146,5 @@
 --GO
 
 
--- Command to Drop the Constraint:
+-- Command to Drop the Constraint
 -- ALTER TABLE tbl_VendorService DROP CONSTRAINT FK_tbl_VendorService_tb_Vendor;
